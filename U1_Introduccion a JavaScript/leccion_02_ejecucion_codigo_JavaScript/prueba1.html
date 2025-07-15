@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+      <p>Este es un ejemplo de una página web con código JavaScript.</p>
+      <!--Primera forma de llamar a un script-->
+      <script>
+        function saludo(nombre){
+            return "Hola " + nombre + ", bienvenido a la página web!";
+        }
+        let nombreUsusario = "Jesus"
+
+        let mensaje = saludo(nombreUsusario);
+
+        alert(mensaje);
+        console.log(mensaje);
+      </script>
+        <!--Segunda forma de llamar a un script(Recomendada)-->
+        <script src="../leccion_3_gramatica.js"></script>
+
+</body>
+</html>

@@ -3,9 +3,9 @@
 // Un objeto es una colección de propiedades y métodos
 // Las propiedades son valores asociados a un objeto
 let persona = {
-    nombre: "Juan",
-    edad: 30,
-    saludar: function() {
+    nombre: "Juan", // Propiedad nombre
+    edad: 30, // Propiedad edad
+    saludar: function() { // Método saludar
         console.log("Hola, mi nombre es " + this.nombre);
     }
 };
@@ -30,15 +30,15 @@ delete persona.ocupacion; // Eliminamos la propiedad ocupacion
 
 //Objetos anidados
 let coche = {
-    marca: "Toyota",
-    modelo: "Corolla",
-    año: 2020,
-    especificaciones: {
-        color: "Rojo",
-        transmision: "Automática",
-        motor: "1.8L"
+    marca: "Toyota", // Propiedad marca
+    modelo: "Corolla", // Propiedad modelo
+    año: 2020, // Propiedad año
+    especificaciones: { // Objeto anidado especificaciones
+        color: "Rojo", // Propiedad color
+        transmision: "Automática", // Propiedad transmision
+        motor: "1.8L" // Propiedad motor
     },
-    detalles: function() {
+    detalles: function() { // Método detalles
         console.log("Coche: " + this.marca + " " + this.modelo + ", Año: " + this.año +
             ", Color: " + this.especificaciones.color +
             ", Transmisión: " + this.especificaciones.transmision +

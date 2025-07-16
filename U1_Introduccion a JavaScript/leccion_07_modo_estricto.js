@@ -21,17 +21,17 @@
 "use strict"; // Activa el modo estricto
 
 //Previene asignación de variables sin declarar
-variableSinNombre = 10; // Esto causaría un error en modo estricto, ya que x no está declarada
+variableSinNombre = 10; // Esto causaría un error en modo estricto, ya que la variable no está declarada
 
 //Previene la reasignación de valores globales
 NaN = 10; // Esto causaría un error en modo estricto, ya que NaN es una constante y no se puede reasignar
 
-//Previene paramétros con el mismo nombre
+//Previene parámetros con el mismo nombre en funciones
 function sum(x,x) {
     return x + x; // Esto causaría un error en modo estricto, ya que los parámetros no pueden tener el mismo nombre
 }
 
-//Previene la eliminación de variables o funciones
+//Previene la eliminación de variables o funciones declaradas
 //delete variableSinNombre; // Esto causaría un error en modo estricto, ya que no se puede eliminar una variable declarada
 
 //Previene el uso de palabras reservadas como nombres de variables

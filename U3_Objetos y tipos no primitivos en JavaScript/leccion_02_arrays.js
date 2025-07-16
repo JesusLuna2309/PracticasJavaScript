@@ -60,29 +60,33 @@ const sumaTotal = numeros.reduce(function(acumulador, numero) {
     return acumulador + numero; // Sumamos todos los números
 }, 0); // Iniciamos el acumulador en 0
 console.log("Suma total de números:", sumaTotal); // Salida: Suma total de números: 16
+
 // sort: Ordena los elementos del array
 const numerosDesordenados = [5, 3, 8, 1, 4];
 numerosDesordenados.sort(function(a, b) {
     return a - b; // Ordenamos de menor a mayor
 });
 console.log("Números ordenados:", numerosDesordenados); // Salida: Números ordenados: [1, 3, 4, 5, 8]
+
 // reverse: Invierte el orden de los elementos del array
 const numerosInvertidos = numerosDesordenados.reverse(); // Invertimos el array
 console.log("Números invertidos:", numerosInvertidos); // Salida: Números invertidos: [8, 5, 4, 3, 1]
+
 // concat: Combina dos o más arrays
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 const arrayConcatenado = array1.concat(array2);
 console.log("Array concatenado:", arrayConcatenado); // Salida: Array concatenado: [1, 2, 3, 4, 5, 6]
+
 // slice: Crea un nuevo array con una copia de una parte del array original
 const arrayOriginal = [1, 2, 3, 4, 5];
 const arrayCortado = arrayOriginal.slice(1, 4); // Cortamos del índice 1 al 4 (sin incluir 4)
 console.log("Array cortado:", arrayCortado); // Salida: Array cortado: [2, 3, 4]
+
 // join: Une todos los elementos del array en un string
 const arrayParaUnir = ['Hola', 'mundo', '!'];
 const stringUnido = arrayParaUnir.join(' '); // Unimos con un espacio
 console.log("String unido:", stringUnido); // Salida: String unido: "Hola mundo !"
-
 
 // flat: Aplana un array de arrays en un solo array
 const arrayAnidado = [[1, 2], [3, 4], [5, 6]];

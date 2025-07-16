@@ -1,8 +1,8 @@
 // Definimos un objeto llamado persona con tres propiedades
 const persona = {
-    nombre: "Natalia",
-    edad: 30,
-    profesion: "Desarrolladora"
+    nombre: "Natalia",         // Propiedad nombre
+    edad: 30,                  // Propiedad edad
+    profesion: "Desarrolladora"// Propiedad profesion
 };
 
 // Object.keys() devuelve un arreglo con las claves (propiedades) del objeto

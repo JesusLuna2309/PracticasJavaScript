@@ -2,51 +2,51 @@
  * * Ejemplo de uso de let, var y const
  */
 
-//Ejemplo de uso de var
+// Ejemplo de uso de var
 function ejemploVar() {
-    var x = 10;
-    console.log("Valor de x (var):", x);
+    var x = 10; // Se declara la variable x con var y se le asigna el valor 10
+    console.log("Valor de x (var):", x); // Imprime 10
     
     if (true) {
-        var x = 20; // Reasignación de la variable x
-        console.log("Valor de x dentro del bloque (var):", x);
+        var x = 20; // Redeclara y reasigna la variable x dentro del bloque (afecta a toda la función)
+        console.log("Valor de x dentro del bloque (var):", x); // Imprime 20
     }
     
-    console.log("Valor de x después del bloque (var):", x); // Se mantiene el valor 20
+    console.log("Valor de x después del bloque (var):", x); // Imprime 20, ya que var tiene alcance de función
 }
 
 ejemploVar();
-//console.log(x); // Esto causaría un error, ya que x no está definida fuera de la función ejemploVar
+//console.log(x); // Esto causaría un error, x no está definida fuera de la función ejemploVar
 
-//Ejemplo de uso de let
+// Ejemplo de uso de let
 function ejemploLet() {
-    let y = 10;
-    console.log("Valor de y (let):", y);
+    let y = 10; // Se declara la variable y con let y se le asigna el valor 10
+    console.log("Valor de y (let):", y); // Imprime 10
     
     if (true) {
-        let x = 25; // Nueva variable x dentro del bloque
-        let y = 20; // Nueva variable y dentro del bloque
-        console.log("Valor de y dentro del bloque (let):", y); // Imprime 20
+        let x = 25; // Se declara una nueva variable x solo dentro del bloque
+        let y = 20; // Se declara una nueva variable y solo dentro del bloque
+        console.log("Valor de y dentro del bloque (let):", y); // Imprime 20, variable local al bloque
     }
     
-    console.log("Valor de y después del bloque (let):", y); // Imprime 10, ya que no se afecta la variable externa
-    //console.log("Valor de x después del bloque (let):", x); // Esto causaría un error, ya que x no está definida fuera del bloque
+    console.log("Valor de y después del bloque (let):", y); // Imprime 10, la variable externa no se modifica
+    //console.log("Valor de x después del bloque (let):", x); // Error, x no existe fuera del bloque
 }
 ejemploLet();
 
-//Ejemplo de uso de const
+// Ejemplo de uso de const
 function ejemploConst() {
-    const z = 10;
-    console.log("Valor de z (const):", z);
+    const z = 10; // Se declara la constante z y se le asigna el valor 10
+    console.log("Valor de z (const):", z); // Imprime 10
     
-    // z = 20; // Esto causaría un error, ya que no se puede reasignar una constante
+    // z = 20; // Error, no se puede reasignar una constante
     
     if (true) {
-        const z = 20; // Nueva constante z dentro del bloque
-        console.log("Valor de z dentro del bloque (const):", z); // Imprime 20
+        const z = 20; // Se declara una nueva constante z solo dentro del bloque
+        console.log("Valor de z dentro del bloque (const):", z); // Imprime 20, constante local al bloque
     }
     
-    console.log("Valor de z después del bloque (const):", z); // Imprime 10, ya que no se afecta la constante externa
+    console.log("Valor de z después del bloque (const):", z); // Imprime 10, la constante externa no se modifica
 }
 
 /**

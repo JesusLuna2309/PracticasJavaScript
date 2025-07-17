@@ -92,3 +92,26 @@ if (Math.random() > 0.5) {
 let resultadoDinamico = procesarNumeros(numeros, operacion);
 console.log("Resultado dinámico:", resultadoDinamico);
 
+//Ejemplo de función anónima autoejecutable (IIFE)
+// Se ejecuta inmediatamente después de ser definida
+(function() {
+    console.log("Esta es una función anónima autoejecutable");
+})(); // Imprime: Esta es una función anónima autoejecutable
+// IIFE es útil para crear un ámbito aislado y evitar contaminación del espacio global
+// También se usa para inicializar código que no necesita ser reutilizado
+
+//Ejemplo de función con callback
+// Las funciones callback son funciones pasadas como argumentos a otras funciones
+function procesarArray(array, callback) {
+    // Itera sobre cada elemento del array y aplica la función callback
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i]); // Llama a la función callback con el elemento actual
+    }
+}
+// Definimos una función callback que imprime cada elemento
+function imprimirElemento(elemento) {
+    console.log("Elemento:", elemento); // Imprime el elemento actual del array
+}
+// Llamamos a procesarArray pasando el array y la función callback
+procesarArray([10, 20, 30], imprimirElemento);
+

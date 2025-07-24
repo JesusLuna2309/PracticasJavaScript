@@ -56,13 +56,11 @@ Este repositorio está organizado de forma similar a las unidades o módulos del
 
 1.  **Clona este repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/nombre-de-tu-repositorio.git](https://github.com/tu-usuario/nombre-de-tu-repositorio.git)
+    git clone [https://github.com/JesusLuna2309/PracticasJavaScript.git](https://github.com/JesusLuna2309/PracticasJavaScript.git)
     ```
-    *(**Recuerda:** Reemplaza `tu-usuario` y `nombre-de-tu-repositorio` con los datos de tu propio GitHub.)*
-
 2.  **Navega a la carpeta del ejemplo que quieras ver:**
     ```bash
-    cd nombre-de-tu-repositorio/ejemplo-unidad-0X-nombre-unidad/nombre-leccion
+    cd PracticasJavaScript/ejemplo-unidad-0X-nombre-unidad/nombre-leccion
     ```
 
 3.  **Para ejemplos web (con HTML/CSS):**
